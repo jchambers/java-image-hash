@@ -9,9 +9,9 @@ public class ExampleApp {
 
     public static void main(final String... args) throws IOException {
         final BufferedImage image = ImageIO.read(new File("/Users/jon/Desktop/test-image.png"));
-        // final BufferedImage modifiedImage = ImageIO.read(new File("/Users/jon/Desktop/test-image-modified.png"));
+        final BufferedImage modifiedImage = ImageIO.read(new File("/Users/jon/Desktop/test-image-modified.png"));
         // final BufferedImage modifiedImage = ImageIO.read(new File("/Users/jon/Desktop/fax-machine.jpg"));
-        final BufferedImage modifiedImage = ImageIO.read(new File("/Users/jon/Desktop/ide.png"));
+        // final BufferedImage modifiedImage = ImageIO.read(new File("/Users/jon/Desktop/ide.png"));
 
         final long hash = PHashCalculator.calculateHash(image);
         System.out.format("0x%016X\n", hash);
