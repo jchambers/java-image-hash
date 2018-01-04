@@ -91,8 +91,6 @@ public class PerceptualHash {
         // Start by rescaling the image to a known size. This may involve some squishing
         // (or, in rare cases, stretching), but that's fine for our purposes. We also want to go to greyscale so we only
         // have a single channel to worry about.
-
-        // TODO: Make sure we're going to luminance rather than a straight RGB average.
         final BufferedImage scaledImage = new BufferedImage(SCALED_IMAGE_SIZE, SCALED_IMAGE_SIZE, BufferedImage.TYPE_BYTE_GRAY);
         {
             final Graphics2D graphics = scaledImage.createGraphics();
