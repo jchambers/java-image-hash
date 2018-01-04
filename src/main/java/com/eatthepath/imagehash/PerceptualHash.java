@@ -1,4 +1,4 @@
-package com.eatthepath.phash;
+package com.eatthepath.imagehash;
 
 import org.jtransforms.dct.FloatDCT_2D;
 
@@ -122,7 +122,6 @@ public class PerceptualHash {
         }
 
         lowFrequencyDctAverage /= 64;
-
 
         // Now that we have an average value for the lowest-frequency components, we can quantize each of the components
         // in that 8x8 square into a 1 or 0 depending on whether the component is above or below the average value for
